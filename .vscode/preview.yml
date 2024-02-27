@@ -1,0 +1,9 @@
+# .vscode/preview.yml
+autoOpen: true # 打开工作空间时是否自动开启所有应用的预览
+apps:
+  - port: 9000 # 应用的端口
+    run: flutter pub get && flutter run -d web-server --web-port 9000 --web-hostname 0.0.0.0 && echo success # 应用的启动命令
+    root: ./ # 应用的启动目录
+    name: flutter-getting-started # 应用名称
+    description: flutter-getting-started # 应用描述
+    autoOpen: true # 打开工作空间时是否自动开启预览（优先级高于根级 autoOpen）
